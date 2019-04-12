@@ -10,6 +10,7 @@ class PrintControl:
     template = None
     bg_color = None
     fg_color = None
+    print_enabled = True
     print_function = print
 
     @staticmethod
@@ -21,7 +22,24 @@ class PrintControl:
         PrintControl.template = None
         PrintControl.bg_color = None
         PrintControl.fg_color = None
+        PrintControl.print_enabled = True
         PrintControl.print_function = print
+
+    @staticmethod
+    def enable() -> None:
+        """Enables printing.
+        :return: None
+        """
+
+        PrintControl.print_enabled = True
+
+    @staticmethod
+    def disable() -> None:
+        """Disables printing.
+        :return: None
+        """
+
+        PrintControl.print_enabled = False
 
 
 def print_extended(*args, **kwargs) -> None:
@@ -30,7 +48,7 @@ def print_extended(*args, **kwargs) -> None:
     :return: None
     """
 
-    if __debug__:
+    if __debug__ and PrintControl.print_enabled:
         printed = StringIO()
 
         with redirect_stdout(printed):

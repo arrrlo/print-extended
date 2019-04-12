@@ -8,7 +8,7 @@ def readme():
 
 setup(
     name='print_extended',
-    version='0.1.0',
+    version='0.2.0',
 
     description='Extended functionalities and better control '
                 'over Python\'s built-in print function',
