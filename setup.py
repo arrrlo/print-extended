@@ -8,9 +8,10 @@ def readme():
 
 setup(
     name='print_extended',
-    version='0.1.0.dev0',
+    version='0.1.0',
 
-    description='Extended functionalities and better control over Python\'s built-in print function',
+    description='Extended functionalities and better control '
+                'over Python\'s built-in print function',
     long_description=readme(),
     long_description_content_type='text/markdown',
 
