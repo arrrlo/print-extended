@@ -12,6 +12,17 @@ class PrintControl:
     fg_color = None
     print_function = print
 
+    @staticmethod
+    def reset() -> None:
+        """Resets static data.
+        :return: None
+        """
+
+        PrintControl.template = None
+        PrintControl.bg_color = None
+        PrintControl.fg_color = None
+        PrintControl.print_function = print
+
 
 def print_extended(*args, **kwargs) -> None:
     """Main method for extending the functionalists of
@@ -25,7 +36,9 @@ def print_extended(*args, **kwargs) -> None:
         with redirect_stdout(printed):
             PrintControl.print_function(*args, **kwargs)
 
-        printed = printed.getvalue().strip()
+        # the last character is new line (\n)
+        # so it has been removed
+        printed = printed.getvalue()[:-1]
 
         if PrintControl.template:
             printed = PrintControl.template.format(print=printed)
