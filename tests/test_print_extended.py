@@ -22,3 +22,19 @@ class TestPrintExtended(unittest.TestCase):
             print('This Is Test!')
 
         self.assertEqual(printed.getvalue()[:-1], ' --> This Is Test! <-- ')
+
+        PrintControl.disable()
+
+        printed = StringIO()
+        with redirect_stdout(printed):
+            print('This Is Test!')
+
+        self.assertEqual(printed.getvalue()[:-1], '')
+
+        PrintControl.enable()
+
+        printed = StringIO()
+        with redirect_stdout(printed):
+            print('This Is Test!')
+
+        self.assertEqual(printed.getvalue()[:-1], ' --> This Is Test! <-- ')

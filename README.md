@@ -21,7 +21,7 @@ Extended functionalists and better control over Python's built-in print function
 
 # Usage
 
-If you run Python interpreter with `-O` flag print will be disabled:
+If you run Python interpreter with `-O` flag print will be disabled (watches for __debug__):
 
 ```bash
 python -O
@@ -65,4 +65,15 @@ from print_extended import PrintControl
 PrintControl.print_function = pprint
 
 print({...}) # will print it using pprint
+```
+
+Disable and enable printing
+
+```python
+import print_extended
+from print_extended import PrintControl
+
+PrintControl.disable() # print(...) now does nothing
+
+PrintControl.enable() # print(...) now prints
 ```
