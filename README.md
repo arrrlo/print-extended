@@ -21,7 +21,7 @@ Extended functionalists and better control over Python's built-in print function
 
 # Usage
 
-If you run Python interpreter with `-O` flag print will be disabled (watches for __debug__):
+If you run Python interpreter with `-O` flag print will be disabled (watches for `__debug__`):
 
 ```bash
 python -O
