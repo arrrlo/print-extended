@@ -20,7 +20,7 @@ Extended functionalists and better control over Python's built-in print function
 > pip install print-extended
 ```
 
-# Usage
+## Usage
 
 If you run Python interpreter with `-O` flag print will be disabled (watches for `__debug__`):
 
