@@ -46,7 +46,6 @@ foo
 Control your print with `PrintControl` class:
 
 ```python
-import print_extended
 from print_extended import PrintControl
 
 PrintControl.template = '--> {print} <--'
@@ -59,7 +58,6 @@ PrintControl.bg_color = 'blue'
 Change underlying print function:
 
 ```python
-import print_extended
 from pprint import pprint
 from print_extended import PrintControl
 
@@ -71,7 +69,6 @@ print({...}) # will print it using pprint
 Disable and enable printing
 
 ```python
-import print_extended
 from print_extended import PrintControl
 
 PrintControl.disable() # print(...) now does nothing

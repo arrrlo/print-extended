@@ -2,7 +2,6 @@ import unittest
 from io import StringIO
 from contextlib import redirect_stdout
 
-import print_extended
 from print_extended import PrintControl
 
 
