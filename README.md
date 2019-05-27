@@ -4,7 +4,7 @@ Extended functionalists and better control over Python's built-in print function
 
 [![PyPI version](https://badge.fury.io/py/print-extended.svg)](https://badge.fury.io/py/print-extended)
 [![Build Status](https://travis-ci.com/arrrlo/print-extended.svg?branch=master)](https://travis-ci.com/arrrlo/print-extended)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/09be30131f5c44f4960a4a0519a789ad)](https://www.codacy.com/app/arrrlo/print-extended?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=arrrlo/print-extended&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cbd3992881824430a20d121e15de20f6)](https://www.codacy.com/app/arrrlo/print-extended?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=arrrlo/print-extended&amp;utm_campaign=Badge_Grade)
 
 ![GitHub issues](https://img.shields.io/github/issues/arrrlo/print-extended.svg)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/arrrlo/print-extended.svg)
